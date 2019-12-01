@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Advent of Code 2019</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/styles.css"
+      media="screen"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Krona+One|Open+Sans"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <script>
+      function getIndex() {
+        return parseInt(window.location.hash.replace("#", ""));
+      }
+
+      const cur = getIndex();
+      if (isNaN(cur) || cur === "" || cur === undefined) {
+        window.location.hash = 1;
+      }
+    </script>
+    <script async type="module" src="main.js"></script>
+  </body>
+</html>
